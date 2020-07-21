@@ -31,6 +31,8 @@
         //let countryData = await getCountryDetails(countryName);
 
         document.querySelector('#imatgeSeleccionada').src = countryData[0].flag;
+        document.querySelector('#population').value = countryData[0].population;
+        document.querySelector('#urlFlag').value = countryData[0].flag;
     }
 
     function getCountryDetailsFake(countryName) {
