@@ -22,7 +22,7 @@ const query1 = "select * from products";
 
 connection.query(query1, function(error, results) {
     if (error) {
-        console.log("Error1!: ", err);
+        console.log("Error1!: ", error);
         return;
     }
     console.log('The solution for Query1 is: ', results);
