@@ -10,10 +10,20 @@
     }
 
     /**
-     * Exercici 5
+     * Exercici 5b. Haz que las opciones del array de objetos 'optionsValues' se carguen dinàmicamente cuando la pàgina se renderice en el navegador
      */
     function setDynamicOptions() {
-
+        const optionsValues = [{
+            value: 'spain',
+            label: 'España'
+        }, {
+            value: 'venezuela',
+            label: 'Venezuela',
+        }, {
+            value: 'peru',
+            label: 'Perú'
+        }
+        ]
     }
 
     setDynamicOptions();
