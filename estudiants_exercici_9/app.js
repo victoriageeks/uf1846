@@ -8,10 +8,10 @@ app.set('view engine', 'ejs');
 let resultsQuery;
 
 var connection = mysql.createConnection({
-    host: 'northwind.covkl9d7xahn.eu-west-3.rds.amazonaws.com',
-    user: 'admin',
-    password: 'servilleta',
-    database: 'northwind'
+    host: 'bifywtpkx5ifl6i8g0dl-mysql.services.clever-cloud.com',
+    user: 'u7vgmkxfkeoz13gr',
+    password: 'StEwI530Fwhx6ojUhjuU',
+    database: 'bifywtpkx5ifl6i8g0dl'
 });
 
 connection.connect();
