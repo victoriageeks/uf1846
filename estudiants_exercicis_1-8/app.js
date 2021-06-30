@@ -3,6 +3,8 @@ const bodyParser = require('body-parser');
 
 const app = express();
 const mongoose = require('mongoose');
+
+// TODO: Cambar a tu Conneciton String a MongoDB Atlas; base de datos 'countries'
 const url = 'mongodb://localhost:27017/countries';
 
 
@@ -11,7 +13,7 @@ app.set('view engine', 'ejs');
 const errorController = require('./controllers/error');
 const countryRoutes = require('./routes/countriesRoutes');
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(express.urlencoded({ extended: false }));
 app.use(express.static('public'));
 
 app.use(countryRoutes);
