@@ -1,7 +1,7 @@
 {
-    async function getCountryDetails(countryName) {
-        console.log("País encontrado", countryName)
-        const response = await fetch(`https://restcountries.eu/rest/v2/name/${countryName}`);
+    async function getCountryDetails() {
+
+        const response = await fetch(`https://restcountries.eu/rest/v2/name/`);
 
         const data = await response.json();
 
