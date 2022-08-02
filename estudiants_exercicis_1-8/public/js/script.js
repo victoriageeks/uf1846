@@ -1,7 +1,7 @@
 {
     async function getCountryDetails() {
 
-        const response = await fetch(`https://restcountries.eu/rest/v2/name/`);
+        const response = await fetch(`https://restcountries.com/v3.1/name/`);
 
         const data = await response.json();
 
@@ -40,9 +40,6 @@
         // Descomenta la següent línia si no has aconseguit implementar la primera part de l'exercici. Comenta la línia anterior també.   
         //let countryData = await getCountryDetailsFake(countryName);
 
-        document.querySelector('#imatgeSeleccionada').src = countryData[0].flag;
-        document.querySelector('#population').value = countryData[0].population;
-        document.querySelector('#urlFlag').value = countryData[0].flag;
     }
 
     function getCountryDetailsFake(countryName) {
