@@ -47,13 +47,14 @@
 
     function getCountryDetailsFake(countryName) {
         const data = {
-            spain: "https://restcountries.eu/data/esp.svg",
-            france: "https://restcountries.eu/data/fra.svg",
-            italy: "https://restcountries.eu/data/ita.svg"
+            spain: "https://flagcdn.com/es.svg",
+            france: "https://flagcdn.com/fr.svg",
+            italy: "https://flagcdn.com/it.svg"
         }
 
         return data.countryName;
     }
+
 
 
     // Descomentar para probar el Ejercicio 6
