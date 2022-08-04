@@ -4,12 +4,21 @@ exports.getHomePage = (req, res) => {
     res.render('index');
 }
 
-exports.postSendData = (req, res) => {
+exports.postSendData = async (req, res) => {
+    const {name,population,flagURL}=req.body;
     const fakeData = {
-        conuntryName: "spain",
-        population: 46438420,
-        urlFlag: "https://restcountries.eu/data/esp.svg"
+        countryname: name,
+        population: population,
+        urlFlag: flagURL    
     }
 
+    const countryex = new Country({
+        name,
+        flagURL,
+        population
+    })
+
+    await countryex.save();
+    
     res.send("Dades rebudes:" + JSON.stringify(fakeData));
 }
