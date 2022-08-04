@@ -34,7 +34,7 @@
      */
 
     async function setCountryFlag(event) {
-        let countryName = event.value;
+        let countryName = event.target.value;
 
         let countryData = await getCountryDetails(countryName);
         // Descomenta la següent línia si no has aconseguit implementar la primera part de l'exercici. Comenta la línia anterior també.   
